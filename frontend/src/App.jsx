@@ -1,11 +1,13 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import { CreateProject } from './pages/createProject'
 
 function App() {
 
-  return(
-    <>
-    Hello
-    </>
+  return (
+    <Routes>
+      <Route path="/" element={<CreateProject />} />
+    </Routes>
   )
 }
 
